@@ -1,0 +1,4 @@
+git init -> das projekt wird initialissiert
+git status -> zeigt den status an
+git add (NAME) -> (NAME) wird dem repository hinzugefügt
+git commit -m "message der Änderung" -> neue Version wird hinzugefügt
