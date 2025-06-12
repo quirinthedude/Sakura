@@ -322,6 +322,29 @@ body {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .contpick {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 40%;
+  }
+  .pick {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    width: 60%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    padding-top: 24%;
+    padding-bottom: 8%;
+  }
+}
 @media (max-width: 700px) {
   #tonkotsu {
     flex-direction: column;
@@ -379,29 +402,16 @@ body {
   #labelpic {
     width: 95%;
     height: auto;
-
   }
 }
-@media (max-width: 800px) {
-  .contpick {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 40%;
+@media (max-width: 368px) {
+  #pointer {
+    margin: 0 auto;
   }
-  .pick {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .icon {
-    width: 60%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    padding-top: 24%;
-    padding-bottom: 8%;
-  }
+  div#address {
+        display: flex; /* Already there, but good to be explicit */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Still useful for centering text within its box */
+      }
 }
