@@ -409,9 +409,29 @@ body {
     margin: 0 auto;
   }
   div#address {
-        display: flex; /* Already there, but good to be explicit */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        text-align: center; /* Still useful for centering text within its box */
+        display: flex; /* Already there, but good to be explicit 
+        flex-direction: column; /* Stack items vertically 
+        align-items: center; /* Center items horizontally 
+        text-align: center; /* Still useful for centering text within its box 
       }
 }
+@media (max-width: 442px) {
+      div#address {
+        /* Maintain flex properties if needed for other screen sizes, but for <= 442px */
+        display: flex; /* Or block */
+        justify-content: center; /* Center the inner content horizontally */
+        align-items: center; /* Center the inner content vertically if parent is flex column */
+      }
+
+      .address-content {
+        display: flex;
+        flex-direction: column; /* Stack image and text */
+        align-items: center; /* Center contents horizontally within this container */
+        text-align: center; /* Center text within its lines */
+      }
+
+      img#pointer {
+        /* Basic styles */
+        margin: 0 auto;
+      }
+    }
