@@ -409,15 +409,11 @@ body {
     margin: 0 auto;
   }
   div#address {
-        display: flex; /* Already there, but good to be explicit 
-        flex-direction: column; /* Stack items vertically 
-        align-items: center; /* Center items horizontally 
-        text-align: center; /* Still useful for centering text within its box 
+        display: flex; 
       }
 }
 @media (max-width: 442px) {
       div#address {
-        /* Maintain flex properties if needed for other screen sizes, but for <= 442px */
         display: flex; /* Or block */
         justify-content: center; /* Center the inner content horizontally */
         align-items: center; /* Center the inner content vertically if parent is flex column */
