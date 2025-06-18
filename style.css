@@ -338,7 +338,7 @@ body {
     align-items: center;
   }
   .icon {
-    width: 60%;
+    width: 32%;
     height: auto;
     aspect-ratio: 1 / 1;
     padding-top: 24%;
@@ -371,6 +371,29 @@ body {
     padding-bottom: 10%;
   }
 }
+#labelpic {
+  width: 95%;
+  height: auto;
+}
+@media (max-width: 442px) {
+  div#address {
+    display: flex; /* Or block */
+    justify-content: center; /* Center the inner content horizontally */
+    align-items: center; /* Center the inner content vertically if parent is flex column */
+  }
+
+  .address-content {
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center contents horizontally within this container */
+    text-align: center; /* Center text within its lines */
+  }
+
+  img#pointer {
+    /* Basic styles */
+    margin: 0 auto;
+  }
+}
 @media (max-width: 400px) {
   .klein {
     font-size: 0.8rem;
@@ -399,35 +422,23 @@ body {
     display: flex;
     justify-content: center;
   }
-  #labelpic {
-    width: 95%;
-    height: auto;
-  }
 }
 @media (max-width: 368px) {
   #pointer {
     margin: 0 auto;
   }
   div#address {
-        display: flex; 
-      }
+    display: flex;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 20px;
+  }
 }
-@media (max-width: 442px) {
-      div#address {
-        display: flex; /* Or block */
-        justify-content: center; /* Center the inner content horizontally */
-        align-items: center; /* Center the inner content vertically if parent is flex column */
-      }
-
-      .address-content {
-        display: flex;
-        flex-direction: column; /* Stack image and text */
-        align-items: center; /* Center contents horizontally within this container */
-        text-align: center; /* Center text within its lines */
-      }
-
-      img#pointer {
-        /* Basic styles */
-        margin: 0 auto;
-      }
-    }
+@media (max-width: 312px) {
+  h3 {
+    font-size: 2.4rem;
+  }
+}
