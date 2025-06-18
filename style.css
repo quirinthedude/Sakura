@@ -289,6 +289,9 @@ body {
 }
 
 .button {
+  display: flex;
+  align-items: center; /* vertikal mittig */
+  gap: 8px; /* Abstand zwischen Icon und Text */
   background-color: #9f0908;
   border-radius: 8px;
   border-color: white;
@@ -300,6 +303,9 @@ body {
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
+}
+.button span {
+  transform: translateY(-2px); /* Text um 2px nach oben */
 }
 
 .button:hover {
@@ -313,7 +319,7 @@ body {
 }
 
 #phone {
-  margin-top: 3px;
+  vertical-align: middle;
   height: 26px;
   width: 26px;
 }
