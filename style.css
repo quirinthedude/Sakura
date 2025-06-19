@@ -44,7 +44,7 @@ h3 {
   font-style: normal;
   margin-top: 0%;
   margin-bottom: 0%;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
 }
 
 a {
@@ -350,11 +350,11 @@ body {
     align-items: center;
   }
   .icon {
-    width: 24%;
+    width: 20%;
     height: auto;
     aspect-ratio: 1 / 1;
-    padding-top: 24%;
-    padding-bottom: 8%;
+    padding-top: 4%;
+    padding-bottom: 2%;
   }
   h1 {
     font-size: 5rem;
@@ -439,7 +439,9 @@ body {
     font-size: 0.8rem;
   }
   .icon {
-    width: 32%;
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 8px;
   }
   h1 {
     font-size: 2.5rem;
@@ -470,6 +472,9 @@ body {
   }
 }
 @media (max-width: 368px) {
+  #abstand2 {
+    margin-top: 4px;
+  }
   #pointer {
     margin: 0 auto;
   }
@@ -480,7 +485,7 @@ body {
     font-size: 2rem;
   }
   h2 {
-    font-size: clamp(3rem, 2vw, 4rem);
+    font-size: clamp(2rem, 2vw, 2.5rem);
   }
   span {
     font-size: 16px;
