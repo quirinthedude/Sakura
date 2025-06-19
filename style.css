@@ -104,6 +104,7 @@ body {
 .menutext {
   width: 400px;
   color: #675e54;
+  padding: 16px;
 }
 
 .picramen {
@@ -359,12 +360,9 @@ body {
   h1 {
     font-size: 5rem;
   }
-}
-@media (max-width: 720px) {
-  h1 {
-    font-size: 4rem;
+  h3 {
+    font-size: clamp(2.2em, 2vw, 2.6em);
   }
-
   #tonkotsu {
     flex-direction: column;
     padding-left: 0%;
@@ -380,6 +378,11 @@ body {
   }
   .menutext {
     width: 80%;
+  }
+}
+@media (max-width: 720px) {
+  h1 {
+    font-size: 4rem;
   }
 }
 @media (max-width: 600px) {
@@ -412,7 +415,12 @@ body {
   h1 {
     font-size: 3rem;
   }
-  span {
+    h3 {
+    font-size: 2em;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+span {
     font-size: 1.4rem;
   }
 
@@ -449,11 +457,6 @@ body {
   h2 {
     font-size: 2.5rem;
     padding-bottom: 2%;
-  }
-  h3 {
-    font-size: 2.5em;
-    padding-top: 0%;
-    padding-bottom: 0%;
   }
   span {
     font-size: 1rem;
