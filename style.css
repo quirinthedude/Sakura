@@ -327,6 +327,9 @@ body {
   .hidemobile {
     display: none;
   }
+  h2 {
+    font-size: clamp(3em, 2vw, 3em);
+  }
 }
 @media (max-width: 800px) {
   .contpick {
@@ -344,7 +347,7 @@ body {
     align-items: center;
   }
   .icon {
-    width: 32%;
+    width: 24%;
     height: auto;
     aspect-ratio: 1 / 1;
     padding-top: 24%;
@@ -389,8 +392,10 @@ body {
   }
 }
 #labelpic {
-  width: 95%;
+  width: 56%;
   height: auto;
+      object-fit: scale-down;
+  overflow: hidden;
 }
 @media (max-width: 442px) {
   h1 {
@@ -422,6 +427,9 @@ body {
   .klein {
     font-size: 0.8rem;
   }
+  .icon {
+    width: 32%;
+  }
   h1 {
     font-size: 2.5rem;
   }
@@ -438,13 +446,13 @@ body {
     font-size: 1rem;
   }
   .picramen {
-    width: 90%;
+    width: 95%;
     height: auto;
     display: flex;
     justify-content: center;
   }
   #labelpicbox {
-    width: 95%;
+    width: 64%;
     padding-left: 0%;
     display: flex;
     justify-content: center;
