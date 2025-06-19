@@ -58,7 +58,7 @@ a:hover {
 
 span {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: clamp(1rem, 2vw, 2rem);
   text-align: center;
 }
 
@@ -350,8 +350,15 @@ body {
     padding-top: 24%;
     padding-bottom: 8%;
   }
+  h1 {
+    font-size: 5rem;
+  }
 }
 @media (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+
   #tonkotsu {
     flex-direction: column;
     padding-left: 0%;
@@ -370,6 +377,10 @@ body {
   }
 }
 @media (max-width: 600px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
   .footerklein {
     flex-direction: column;
     height: auto;
@@ -382,6 +393,13 @@ body {
   height: auto;
 }
 @media (max-width: 442px) {
+  h1 {
+    font-size: 3rem;
+  }
+  span {
+    font-size: 1.4rem;
+  }
+
   div#address {
     display: flex; /* Or block */
     justify-content: center; /* Center the inner content horizontally */
@@ -416,6 +434,9 @@ body {
     padding-top: 0%;
     padding-bottom: 0%;
   }
+  span {
+    font-size: 1rem;
+  }
   .picramen {
     width: 90%;
     height: auto;
@@ -440,11 +461,14 @@ body {
     font-size: 2rem;
   }
   span {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 312px) {
   h3 {
     font-size: 2.4rem;
+  }
+  span {
+    font-size: 12px;
   }
 }
