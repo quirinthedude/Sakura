@@ -328,7 +328,10 @@ body {
     display: none;
   }
   h2 {
-    font-size: clamp(3em, 2vw, 3em);
+    font-size: clamp(2.5em, 2vw, 3em);
+  }
+  h3 {
+    font-size: clamp(2.5em, 2vw, 3em);
   }
 }
 @media (max-width: 800px) {
@@ -357,7 +360,7 @@ body {
     font-size: 5rem;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   h1 {
     font-size: 4rem;
   }
@@ -467,6 +470,9 @@ body {
   }
   h1 {
     font-size: 2rem;
+  }
+  h2 {
+    font-size: clamp(3rem, 2vw, 4rem);
   }
   span {
     font-size: 16px;
