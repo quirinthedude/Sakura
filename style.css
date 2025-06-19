@@ -216,7 +216,7 @@ body {
 
 #footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 130px;
   width: 100%;
@@ -389,9 +389,11 @@ body {
 
   .footerklein {
     flex-direction: column;
+    justify-content: center;
+    gap: 20%;
     height: auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 #labelpic {
@@ -399,6 +401,14 @@ body {
   height: auto;
       object-fit: scale-down;
   overflow: hidden;
+}
+#labelpicbox {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+}
+#labelpic {
+  width: 80%;
 }
 @media (max-width: 442px) {
   h1 {
@@ -455,7 +465,7 @@ body {
     justify-content: center;
   }
   #labelpicbox {
-    width: 64%;
+    width: 100%;
     padding-left: 0%;
     display: flex;
     justify-content: center;
