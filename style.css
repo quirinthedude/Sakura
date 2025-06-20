@@ -420,10 +420,6 @@ body {
     padding-top: 0%;
     padding-bottom: 0%;
   }
-span {
-    font-size: 1.4rem;
-  }
-
   div#address {
     display: flex; /* Or block */
     justify-content: center; /* Center the inner content horizontally */
