@@ -27,7 +27,7 @@ h2 {
   display: flex;
   justify-content: center;
   font-family: "Raleway", sans-serif;
-  font-size: 96px;
+  font-size: 92px;
   font-weight: 700;
   font-style: normal;
   color: #9f0908;
@@ -44,7 +44,7 @@ h3 {
   font-style: normal;
   margin-top: 0%;
   margin-bottom: 0%;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
 }
 
 a {
@@ -58,7 +58,7 @@ a:hover {
 
 span {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: clamp(1rem, 2vw, 2rem);
   text-align: center;
 }
 
@@ -104,6 +104,7 @@ body {
 .menutext {
   width: 400px;
   color: #675e54;
+  padding: 16px;
 }
 
 .picramen {
@@ -289,6 +290,9 @@ body {
 }
 
 .button {
+  display: flex;
+  align-items: center; /* vertikal mittig */
+  gap: 8px; /* Abstand zwischen Icon und Text */
   background-color: #9f0908;
   border-radius: 8px;
   border-color: white;
@@ -300,6 +304,9 @@ body {
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
+}
+.button span {
+  transform: translateY(-2px); /* Text um 2px nach oben */
 }
 
 .button:hover {
@@ -313,13 +320,19 @@ body {
 }
 
 #phone {
-  margin-top: 3px;
+  vertical-align: middle;
   height: 26px;
   width: 26px;
 }
 @media (max-width: 950px) {
   .hidemobile {
     display: none;
+  }
+  h2 {
+    font-size: clamp(3em, 2vw, 3.5em);
+  }
+  h3 {
+    font-size: clamp(2.5em, 2vw, 3em);
   }
 }
 @media (max-width: 800px) {
@@ -338,14 +351,18 @@ body {
     align-items: center;
   }
   .icon {
-    width: 60%;
+    width: 20%;
     height: auto;
     aspect-ratio: 1 / 1;
-    padding-top: 24%;
-    padding-bottom: 8%;
+    padding-top: 4%;
+    padding-bottom: 2%;
   }
-}
-@media (max-width: 700px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  }
   #tonkotsu {
     flex-direction: column;
     padding-left: 0%;
@@ -363,17 +380,72 @@ body {
     width: 80%;
   }
 }
+@media (max-width: 720px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 600px) {
-  .footerklein {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  #footer {
     flex-direction: column;
+    justify-content: center;
+    gap: 16px;
     height: auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #labelpic {
+    width: 250px;
+    height: auto;
+    object-fit: scale-down;
+    overflow: hidden;
+  }
+  #labelpicbox {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 442px) {
+  h1 {
+    font-size: 3rem;
+  }
+    h3 {
+    font-size: 2.4rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  div#address {
+    display: flex; /* Or block */
+    justify-content: center; /* Center the inner content horizontally */
+    align-items: center; /* Center the inner content vertically if parent is flex column */
+  }
+
+  .address-content {
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center contents horizontally within this container */
+    text-align: center; /* Center text within its lines */
+  }
+
+  img#pointer {
+    /* Basic styles */
+    margin: 0 auto;
   }
 }
 @media (max-width: 400px) {
   .klein {
     font-size: 0.8rem;
+  }
+  .icon {
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 8px;
   }
   h1 {
     font-size: 2.5rem;
@@ -382,56 +454,47 @@ body {
     font-size: 2.5rem;
     padding-bottom: 2%;
   }
-  h3 {
-    font-size: 2.5em;
-    padding-top: 0%;
-    padding-bottom: 0%;
+  span {
+    font-size: 1rem;
   }
   .picramen {
-    width: 90%;
+    width: 95%;
     height: auto;
     display: flex;
     justify-content: center;
   }
   #labelpicbox {
-    width: 95%;
+    width: 100%;
     padding-left: 0%;
     display: flex;
     justify-content: center;
   }
-  #labelpic {
-    width: 95%;
-    height: auto;
-  }
 }
 @media (max-width: 368px) {
+  #abstand2 {
+    margin-top: 4px;
+  }
   #pointer {
     margin: 0 auto;
   }
   div#address {
-        display: flex; /* Already there, but good to be explicit 
-        flex-direction: column; /* Stack items vertically 
-        align-items: center; /* Center items horizontally 
-        text-align: center; /* Still useful for centering text within its box 
-      }
+    display: flex;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: clamp(2rem, 2vw, 2.5rem);
+  }
+  span {
+    font-size: 16px;
+  }
 }
-@media (max-width: 442px) {
-      div#address {
-        /* Maintain flex properties if needed for other screen sizes, but for <= 442px */
-        display: flex; /* Or block */
-        justify-content: center; /* Center the inner content horizontally */
-        align-items: center; /* Center the inner content vertically if parent is flex column */
-      }
-
-      .address-content {
-        display: flex;
-        flex-direction: column; /* Stack image and text */
-        align-items: center; /* Center contents horizontally within this container */
-        text-align: center; /* Center text within its lines */
-      }
-
-      img#pointer {
-        /* Basic styles */
-        margin: 0 auto;
-      }
-    }
+@media (max-width: 312px) {
+  h3 {
+    font-size: 2.4rem;
+  }
+  span {
+    font-size: 12px;
+  }
+}
